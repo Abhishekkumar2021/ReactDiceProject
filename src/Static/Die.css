@@ -1,0 +1,27 @@
+.Die {
+	padding: 10px;
+}
+.icon {
+	font-size: 180px;
+	color: rgb(240, 62, 49);
+}
+.rolling {
+	animation: shaking 1s linear;
+}
+@keyframes shaking {
+	from {
+		transform: translateX(0) rotate(0deg);
+	}
+	25% {
+		transform: translateX(-50px) rotate(-10deg);
+	}
+	50% {
+		transform: translateX(0) rotate(0deg);
+	}
+	75% {
+		transform: translateX(50px) rotate(10deg);
+	}
+	to {
+		transform: translateX(0px) rotate(0deg);
+	}
+}

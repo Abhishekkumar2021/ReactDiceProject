@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DiceCard from "./Components/DiceCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	let result = [];
+	for (let i = 0; i < 100; i++) {
+		result.push(<DiceCard />);
+	}
+	return <div className="App">{result}</div>;
 }
 
 export default App;
